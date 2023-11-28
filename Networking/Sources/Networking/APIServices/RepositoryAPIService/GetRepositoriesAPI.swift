@@ -29,7 +29,10 @@ struct GetRepositoriesAPI: BaseAPIProtocol {
     
     var headers: [String : String] {
         var header = defaultHeaders
-        header["Authorization"] = "Bearer \(config.token)"
+        header["accept"] = "application/vnd.github+json"
+        
+        // add auth token if needed
+        //header["Authorization"] = "Bearer \(config.token)"
         return header
     }
 

@@ -87,7 +87,11 @@ final class ListRepositoryViewModel: ObservableObject {
     }
 
     func shouldLoadMore(repo: Repository) -> Bool {
-        repositories[repositories.count - 2].id == repo.id
+        if (repositories.count > 2) {
+            return repositories[repositories.count - 2].id == repo.id
+        } else {
+            return false
+        }
     }
 }
 

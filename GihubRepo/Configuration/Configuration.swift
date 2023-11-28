@@ -21,6 +21,7 @@ enum Configuration {
         case let value as T: return value
         case let string as String:
             guard let value = T(string) else { fallthrough }
+            print("key: \(value)")
             return value
         default: fatalError("Invalid value for \(key)")
         }
