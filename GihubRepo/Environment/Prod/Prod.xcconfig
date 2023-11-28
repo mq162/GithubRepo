@@ -1,0 +1,18 @@
+//
+//  Prod.xcconfig
+//  GihubRepo
+//
+//  Created by Braly Admin on 27/11/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+IOS_APP_NAME = Github Repo
+IOS_BUNDLE_ID = com.pmquang.github.repo
+MARKETING_VERSION = 1.0.0
+CURRENT_PROJECT_VERSION = 1
+
+// API
+GITHUB_BASE_URL = https:/$()/api.github.com
+GITHUB_TOKEN = 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
